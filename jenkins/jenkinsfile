@@ -1,0 +1,13 @@
+ pipeline {
+    agent any
+    stages {
+        stage('Build-system details') {
+            steps {
+                sh '''
+                echo '"ip adress"'
+                hostname -I
+            }
+        }
+        
+    }
+ } 
